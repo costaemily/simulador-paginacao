@@ -10,7 +10,7 @@ Este repositório possui um simulador de algoritmos de paginação.
  - Área para acessar algum endereço na memória.
  
 <br><img src="imgs/primeira.JPG" alt="Página Principal"/><br>
-## Algoritmos
+## Algoritmos :books:
 ### FIFO
  Neste caso mantém-se uma fila de páginas referenciadas. Ao entrar uma nova página, ela entra no fim da fila substituindo a que estava colocada no início da fila. O problema é que pode retirar páginas que apesar de estarem a muito tempo na memória, estão sendo amplamente utilizadas. Para resolver isso, utilizamos dois bits R e M e então: verifica os bits R e M da página mais antiga, se for classe 0 essa página é escolhida para ser retirada, senão, continua procurando na fila, se não achar nenhum classe 0 prossegue para as classes seguintes (1, 2 e 3).
 ### SEGUNDA CHANCE
@@ -29,7 +29,7 @@ Este repositório possui um simulador de algoritmos de paginação.
 <br>
   Escolhe para ser retirada a página que pertencer a classe mais baixa, no momento da ocorrência do page fault. Vantagem é a simples implementação. Quando o hardware não possui os bits R e M, o SO pode simular esses bits através da utilização dos mecanismos de proteção de páginas, da seguinte forma: inicialmente marca-se todas as páginas como ausentes, e quando uma página é referenciada, é gerado um page fault então o SO marca essa página como presente, mas permite apenas leitura e também marca em uma tabela interna o bit R simulado para essa página. Quando uma escrita for tentada nessa página, uma interrupção de acesso inválido será gerada, e o SO poderá marcar a página como de leitura e escrita e também marca em uma tabela interna o bit M simulado para essa página.
 
-## ALGORITMOS FEITOS
+## FEITOS :heavy_check_mark:
 
 - [x] FIFO
 - [x] SEGUNDA CHANCE
