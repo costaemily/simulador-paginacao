@@ -47,3 +47,6 @@ Este repositório possui um simulador de algoritmos de paginação.
 - [x] RELÓGIO
 - [x] LRU
 - [ ] NRU
+
+## REFERÊNCIAS
+ALGORITMOS de Mudança de Página. [S. l.], 2021. Disponível em: https://alexcoletta.eng.br/artigos/algoritmos-de-mudanca-de-pagina/. Acesso em: 11 jun. 2021.
