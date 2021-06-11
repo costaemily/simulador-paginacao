@@ -1,7 +1,14 @@
 ## Simulador de Algoritmos de Paginação
 Este repositório possui um simulador de algoritmos de paginação.
 
-## Interface <br>
+## Interface :desktop_computer:<br>
+ Desenvolvido em C# utilizando a ferramenta Visual Studio, a interface gráfica tem um design básico do Forms. E conta com:
+ - Tabela de Páginas;
+ - Memória Principal;
+ - Memória Secundária;
+ - Área para setar a Memória;
+ - Área para acessar algum endereço na memória.
+ 
 <br><img src="imgs/primeira.JPG" alt="Página Principal"/><br>
 ## Algoritmos
 ### FIFO
