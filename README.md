@@ -2,7 +2,7 @@
 Este repositório possui um simulador de algoritmos de paginação.
 
 ## Interface :desktop_computer:<br>
- Desenvolvido em C# utilizando a ferramenta Visual Studio, a interface gráfica tem um design básico do Forms. E conta com:
+ Desenvolvido em C# utilizando a ferramenta Visual Studio, a interface gráfica tem um design básico do Windows Forms. E conta com:
  - Tabela de Páginas;
  - Memória Principal;
  - Memória Secundária;
@@ -10,6 +10,13 @@ Este repositório possui um simulador de algoritmos de paginação.
  - Área para acessar algum endereço na memória.
  
 <br><img src="imgs/primeira.JPG" alt="Página Principal"/><br>
+## Como usar :question:
+ 1. Digite a quantidade de bits de endereçamento de memória e offset que deseja;
+ 2. Digite a quantidade de blocos desejada e clique no botão "Alocar";
+ 3. Escolha um algoritmo de troca de páginas na lista e o selecione;
+ 4. No grupo "Acessar memória" digite o endereço e deslocamento da página que deseja acessar, após clique no botão "Acessar";
+ 5. Para limpar as memórias e a tabela de páginas, clique em "Limpar tudo" e comece a simulação novamente se desejar;
+ 
 ## Algoritmos :books:
 ### FIFO
  Neste caso mantém-se uma fila de páginas referenciadas. Ao entrar uma nova página, ela entra no fim da fila substituindo a que estava colocada no início da fila. O problema é que pode retirar páginas que apesar de estarem a muito tempo na memória, estão sendo amplamente utilizadas. Para resolver isso, utilizamos dois bits R e M e então: verifica os bits R e M da página mais antiga, se for classe 0 essa página é escolhida para ser retirada, senão, continua procurando na fila, se não achar nenhum classe 0 prossegue para as classes seguintes (1, 2 e 3).
