@@ -16,7 +16,7 @@ Este repositório possui um simulador de algoritmos de paginação.
 ### SEGUNDA CHANCE
   E outra solução seria o algoritmo conhecido como segunda chance: verifica o bit R da página mais velha se for zero, utiliza essa página, senão põe 0 em R e coloca a página no fim da fila e prossegue analisando a fila até encontrar uma página com R=0.
 ### RELÓGIO
-  
+   Uma espécie de Round-Robin para as páginas em memória. Se o bit for igual a 0, ele remove a página e o ponteiro avança para o item seguinte. Se o bit R for igual a 1, ele zera o bit R e avança o ponteiro.
 ### LRU
   Páginas muito utilizadas nas instruções mais recentes provavelmente permanecerão muito utilizadas nas próximas instruções e páginas não utilizadas a tempo provavelmente não serão utilizadas por bastante tempo. Esse algoritmo consiste em: quando ocorre um page fault, retira a página que a mais tempo não é referenciada. O problema é a implementação dispendiosa (manter uma lista de todas as páginas na memória – as mais recentemente utilizadas no início – e a lista deve ser alterada a cada referência na memória) e esta implementação por software é inviável em termos de tempo de execução
 ### NRU
